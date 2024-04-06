@@ -10,13 +10,22 @@ function App() {
   
   const addValue = () =>{
     if(counter<20){
-      setCount(++counter)
+      // setCount(counter+1)
+      // setCount(counter+1)
+      // setCount(counter+1)
+      // setCount(counter+1)
+      // here react create all setcount in single batch thats why it is only add single time
+
+      setCount(prevCount=> prevCount+1)
+      setCount(prevCount=> prevCount+1)
+      setCount(prevCount=> prevCount+1)
+      // here react first take prevCount and then add
     }
   }
 
   const removeValue = () => {
     if(counter>0){
-      setCount(--counter)
+      setCount(counter-1)
     }
   }
   
