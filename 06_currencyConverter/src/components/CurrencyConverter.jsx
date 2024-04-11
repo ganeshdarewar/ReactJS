@@ -33,7 +33,7 @@ function CurrencyConverter() {
     const convertCurrency = () =>{
         if(!amount)
         return false
-        fetch(`https://api.frankfurter.app/latest?amount=${amount}&from=${fromCurrency}&to=${toCurrency}`)
+        fetch(`https://api.frankfurter.app/latest?amount=${amount}from=${fromCurrency}&to=${toCurrency}`)
         .then((res) => res.json())
         .then(data => setConvertedAmount(data.rates[toCurrency] + " " + toCurrency))
         .catch((e) => console.log(`error in fetching data ${e}`));
