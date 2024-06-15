@@ -9,7 +9,8 @@ function App() {
   // for vite
   // console.log(import.meta.env.VITE_APPWRITE_URL);
 
-  console.log(conf);
+  // console.log(conf);
+
   return (
     <></>
   )
